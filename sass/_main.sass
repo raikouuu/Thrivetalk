@@ -1,0 +1,341 @@
+html
+    scroll-behavior: smooth
+    
+.container
+    width: 80%
+    margin: 0 auto
+
+.home
+    padding: 27px 0 75px 0
+    background-color: #F4F9E2
+
+.header
+    height: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_logo
+        font-family: 'Larsseit-Bold'
+        font-size: 24px
+        color: #62D0DF
+
+.list
+    &_links
+        display: inline-block
+        margin-right: 25px
+        &:last-child
+            margin-right: 0
+        &::after
+            display: block
+            content: ''
+            width: 0%
+            border-bottom: 2px solid #22356F
+            transition: .3s all
+        &:hover::after
+            width: 100%
+        a
+            font-family: 'Larsseit-Medium'
+            font-size: 14px
+            color: #22356F
+            text-decoration: none
+
+.btn
+    padding: 16px 30px
+    font-family: 'Larsseit-Bold'
+    font-size: 14px
+    color: #fff
+    background-color: #62D0DF
+    border: 1px solid #2ba8b9
+    border-radius: 50px
+    text-transform: uppercase
+    cursor: pointer
+
+.promo
+    // &_logo
+    //     font-family: 'Larsseit-Bold'
+    //     font-size: 24px
+    //     color: #62D0DF
+    //     margin-top: 164px
+    &_title
+        font-family: 'Larsseit-Bold'
+        font-size: 48px
+        color: #22356F
+        margin-top: 155px
+    &_text
+        font-family: 'Larsseit-Regular'
+        font-size: 24px
+        line-height: 45px
+        color: #22356F
+        margin-top: 105px
+    &_tables
+        display: flex
+        margin-top: 63px
+    &_box1
+        width: 150px
+        height: 50px
+        margin-right: 20px
+        background-color: #F9B640
+        font-family: 'Larsseit-Bold'
+        font-size: 16px
+        color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+    &_box2
+        width: 150px
+        height: 50px
+        background-color: #F4F9E2
+        font-family: 'Larsseit-Bold'
+        font-size: 16px
+        color: #F9B640
+        display: flex
+        justify-content: center
+        align-items: center
+
+.why
+    display: flex
+    width: 100%
+    height: 604px
+    background-color: #62D0DF
+    &_lblock
+        width: 841px
+        height: 604px
+    &_rblock
+        width: 525px
+        height: 604px
+        background-image: url('/img/2.jpg')
+    &_title
+        font-family: 'Larsseit-Bold'
+        font-size: 36px
+        color: #fff
+        margin-top: 150px
+        margin-left: 134.906px
+    &_text
+        font-family: 'Larsseit-Medium'
+        font-size: 20px
+        line-height: 29.91px
+        color: #fff
+        margin-top: 90px
+        margin-left: 134.906px
+        span
+            font-family: 'Larsseit-Bold'
+            font-size: 24px
+
+.about
+    padding-bottom: 24px
+    &_wrapper
+        display: flex
+    &_subtitle
+        font-family: 'Larsseit-Regular'
+        font-size: 16px
+        color: #22356F
+        margin-top: 156px
+        margin-left: 106px
+    &_text
+        font-family: 'Larsseit-Medium'
+        font-size: 24px
+        color: #22356F
+        margin-top: 156px
+        margin-left: 225px
+    &_ftitle
+        font-family: 'Larsseit-Regular'
+        font-size: 16px
+        color: rgba(34, 53, 111, 0.5)
+        text-align: center
+        margin-top: 70px
+
+.catalog
+    display: flex
+    width: 100%
+    height: 360px
+    &_item
+        width: 25%
+        padding-top: 71px
+        hr
+            width: 255px
+            border: 1px solid #fff
+            margin: 0 auto
+            margin-bottom: 23px
+    .item1
+        background-color: #FFE2DE
+    .item2
+        background-color: #C4E769
+    .item3
+        background-color: #62D0DF
+    .item4
+        background-color: #0052C1
+    &_list
+        list-style: disc
+        margin-left: 67px
+        li
+            font-family: 'Larsseit-Bold'
+            font-size: 32px
+            color: #E9B730
+            span
+                color: #fff
+
+.empty
+    width: 100%
+    height: 120px
+
+.todo
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    height: 960px
+    &_item
+        width: 33.333%
+        padding-top: 95px
+        hr
+            width: 340px
+            border: 1px solid #fff
+            margin: 0 auto
+            margin-bottom: 30px
+    &_list
+        list-style: disc
+        margin-left: 72px
+        li
+            font-family: 'Larsseit-Bold'
+            font-size: 32px
+            color: #E9B730
+            span
+                color: #fff
+    .item1
+        background-color: #22356F
+    .item2
+        background-color: #0052C1
+    .item3
+        background: url('/img/3.jpg')
+    .item4
+        background-color: #62D0DF
+    .item5
+        background-color: #DEE1FF
+    .item6
+        background-color: #8F00FF
+
+.services
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    height: 480px
+    padding-top: 22px
+    padding-bottom: 22px
+    .item
+        width: 449px
+        height: 240px
+    &_title
+        font-family: 'Larsseit-Regular'
+        font-size: 28px
+        color: #22356F
+        margin: 55px 0 28px 0
+        text-align: center
+    &_text
+        font-family: 'Larsseit-Regular'
+        font-size: 16px
+        color: rgba(34, 53, 111, 0.5)
+        text-align: center
+
+.know
+    display: flex
+    height: 800px
+    &_lblock
+        width: 480px
+        height: 800px
+        background: url('/img/4.jpg')
+    &_rblock
+        width: 886px
+        padding-top: 103px
+        padding-left: 106px
+
+    &_title
+        font-family: 'Larsseit-Regular'
+        font-size: 16px
+        color: #22356F
+        margin-bottom: 225px
+    &_text
+        font-family: 'Larsseit-Bold'
+        font-size: 36px
+        color: #22356F
+        margin-bottom: 152px
+        span
+            color: #62D0DF
+    &_substr
+        font-family: 'Larsseit-Bold'
+        font-size: 16px
+        color: #FAB63E
+
+.contactus
+    display: flex
+    width: 100%
+    height: 800px
+    &_lblock
+        width: 886px
+        padding-top: 103px
+        padding-left: 180px
+        background-color: #22356F
+    &_rblock
+        width: 480px
+        height: 800px
+        background: url('/img/5.jpg')
+    &_title
+        font-family: 'Larsseit-Regular'
+        font-size: 16px
+        color:  #fff
+        margin-bottom: 230px
+    &_subtitle
+        font-family: 'Larsseit-Bold'
+        font-size: 64px
+        color: #fff
+        margin-bottom: 75px
+    &_text
+        font-family: 'Larsseit-Regular'
+        font-size: 36px
+        color: #fff
+        margin-bottom: 85px
+    &_substr
+        font-family: 'Larsseit-Bold'
+        font-size: 16px
+        color: #62D0DF
+
+.info
+    display: flex
+    height: 380px
+    &_lblock
+        width: 570px
+        height: 380px
+        background: url('/img/6.jpg')
+    &_rblock
+        display: flex
+        justify-content: space-around
+        width: 796px
+        padding-top: 98px
+        padding-left: 68px
+    &_title
+        font-family: 'Larsseit-Bold'
+        font-size: 14px
+        color: #22356F
+        margin-bottom: 58px
+    &_text
+        font-family: 'Larsseit-Regular'
+        font-size: 14px
+        color: rgba(34, 53, 111, 0.5)
+        span
+            color: rgba(0, 109, 255, 1)
+    .item
+        width: 172px
+        height: 208px
+        margin-right: 32px
+
+.footer
+    display: flex
+    align-items: center
+    height: 80px
+    background-color: #62D0DF
+    padding-left: 179px
+    &_sign
+        color: #fff
+    &_copy
+        font-family: 'Larsseit-Bold'
+        font-size: 14px
+        color: #fff
+        margin-left: 6px
